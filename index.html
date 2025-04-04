@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenhouse Monitoring</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/login">Login/Sign Up</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Welcome to Greenhouse Monitoring</h1>
+        <p>Monitor temperature, humidity, and air quality in real time.</p>
+    </header>
+    
+    <section class="monitoring-options">
+        <a href="/records?data=temperature" class="option">Temperature</a>
+        <a href="/records?data=humidity" class="option">Humidity</a>
+        <a href="/records?data=air_quality" class="option">Air Quality</a>
+    </section>
+    
+    <section class="access-records">
+        <a href="/records" class="access-btn">Access Records</a>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Greenhouse Monitoring System</p>
+    </footer>
+</body>
+</html>
